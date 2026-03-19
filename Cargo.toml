@@ -31,12 +31,14 @@ tracy-client = { version = "0.18.4", default-features = false }
 [workspace.dependencies.smithay]
 # version = "0.4.1"
 git = "https://github.com/Smithay/smithay.git"
+rev = "f6d10709db2bb68c46b9c128a4163d035356572c"
 # path = "../smithay"
 default-features = false
 
 [workspace.dependencies.smithay-drm-extras]
 # version = "0.1.0"
 git = "https://github.com/Smithay/smithay.git"
+rev = "f6d10709db2bb68c46b9c128a4163d035356572c"
 # path = "../smithay/smithay-drm-extras"
 
 [package]
@@ -93,6 +95,7 @@ tracing-subscriber.workspace = true
 tracing.workspace = true
 tracy-client.workspace = true
 wayland-backend = "0.3.14"
+wayland-protocols-plasma = { version = "0.3.11", features = ["server"] }
 wayland-scanner = "0.31.9"
 wayland-server = { version = "0.31.12", features = ["libwayland_1_23"] }
 xcursor = "0.3.10"
